@@ -532,11 +532,11 @@
     <string name="pie_status_mobile">Nur mobiles Netzwerk</string>
     <string name="pie_status_none">Keines</string>
     <string name="pie_status_both">Beides</string>
-    <string name="pie_gravity_title">Pie Position</string>
-    <string name="pie_gravity_summary">Position festlegen, an der Pie Control angezeigt werden sollen</string>
-    <string name="pie_gravity_bottom">Unten</string>
-    <string name="pie_gravity_right">Rechts</string>
-    <string name="pie_gravity_left">Links</string>
+    <string name="pa_pie_gravity_title">Pie Position</string>
+    <string name="pa_pie_gravity_summary">Position festlegen, an der Pie Control angezeigt werden sollen</string>
+    <string name="pa_pie_gravity_bottom">Unten</string>
+    <string name="pa_pie_gravity_right">Rechts</string>
+    <string name="pa_pie_gravity_left">Links</string>
 
     <!-- Edge gestures --> 
     <string name="edge_gestures_title">Edge Gesten</string> 
