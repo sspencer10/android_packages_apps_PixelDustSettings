@@ -86,12 +86,12 @@ public class EdgeGesturesSettings extends SettingsPreferenceFragment implements
  
             if (enabled == 1) { 
                 Settings.Secure.putInt(getContentResolver(), 
-                        Settings.Secure.NAVIGATION_BAR_VISIBLE, 
+                        Settings.System.NAVIGATION_BAR_SHOW, 
                         0); 
             } else { 
                 if (ActionUtils.hasNavbarByDefault(getPrefContext())) { 
                     Settings.Secure.putInt(getContentResolver(), 
-                            Settings.Secure.NAVIGATION_BAR_VISIBLE, 
+                            Settings.System.NAVIGATION_BAR_SHOW, 
                             1); 
                 } 
             } 
