@@ -38,6 +38,7 @@ import com.android.internal.util.pixeldust.AwesomeAnimationHelper;
 import com.pixeldust.settings.preferences.CustomSeekBarPreference;
 
 import java.util.Arrays;
+import android.util.Log;
 
 public class AnimationControls extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -202,11 +203,15 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
             Settings.System.putInt(resolver,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], val);
         } else if (preference == mAnimDuration) {
-            int val = Integer.parseInt((String) newValue);
+            int val = (Integer) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.ANIMATION_CONTROLS_DURATION, val);
         }
-        preference.setSummary(getProperSummary(preference));
+        try {
+            preference.setSummary(getProperSummary(preference));
+        } catch (Exception e) {
+            Log.e("AnimationControls:", "Error occured for setSummary()");
+        }
         return true;
     }
 
